@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(cors({
-    origin:true,
+    origin:["https://deploy-mern-lwhq.vercel.app"],
     methods:["GET","POST","PUT","DELETE"],
     credentials:true
 }))
@@ -29,7 +29,7 @@ mongoose
   .catch((err) => {
     console.error("Failed to connect to MongoDB", err);
   });
-
+app.get("/",(req,res)=>{res.json("hello")})
 const port = 5000;
 
 app.listen(port, () => {
