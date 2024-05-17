@@ -6,7 +6,7 @@ const ContextProvider = (props) => {
   const APP_ID = "b3972793";
   const APP_KEY = "91d4d909be31b7f05b7997fb6f2380b0";
   
-  const url "mern-recipe-api.vercel.app";
+  const url "http://localhost:5000/api";
   const [token, setToken] = useState("");
   const [recipe, setRecipe] = useState([]);
   const [search, setSearch] = useState('food');
