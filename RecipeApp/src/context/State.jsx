@@ -24,7 +24,7 @@ const ContextProvider = (props) => {
 
   useEffect(() => {
     fetchRecipe();
-  }, [search]); // Fetch recipes when the search term changes
+  }, [search,token]); // Fetch recipes when the search term changes
 
   useEffect(() => {
     if(token){
